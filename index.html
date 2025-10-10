@@ -127,7 +127,7 @@
         const tc = m[1];
         const texto = m[2];
         const whenSec = startSec + parseTimecode(tc);
-        out.push(`${formatHHMM(whenSec)} ${texto}`);
+        out.push(`${formatHHMM(whenSec)} ${texto.toLowerCase()}`);
       }
       $('#output').textContent = out.join('\n');
     }
